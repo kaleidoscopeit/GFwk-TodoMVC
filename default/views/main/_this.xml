@@ -1,0 +1,78 @@
+<?xml version="1.0"  encoding="UTF-8" ?>
+
+<base:htmlview
+    title="TodoMVC"
+    css="">
+
+  <base:label
+      boxing=",103px,,top"
+      caption="todos"
+      halign="center"
+      valign="middle"
+      class="head"/>
+
+  <pack:vlayout boxing="550px,,,,,130px" style="overflow:visible;" >
+
+    <pack:vlaycell class="main footer" height="50px" style="display:table;">
+      <pack:vlayout naked="true">
+
+        <pack:vlaycell class="top_band" height="16px" />
+
+        <pack:vlaycell class="new_todo" height="66px">
+          <form:entry
+              id="new_todo"
+              boxing="59px,34px,16px,,,-2px"
+              halign="center"
+              valign="middle"
+              caption="todos"
+              placeholder="What needs to be done?"/>
+        </pack:vlaycell>
+
+        <pack:vlaycell style="display:table;">
+          <data:jtable>
+          </data:jtable>
+            <data:jtablecell>
+            </data:jtablecell>
+        </pack:vlaycell>
+      </pack:vlayout>
+
+      <pack:area
+          boxing="4px,17px,left,0px,40px"
+          class="strips" />
+    </pack:vlaycell>
+
+    <pack:vlaycell height="40px">
+
+    </pack:vlaycell>
+
+    <pack:vlaycell height="25px">
+    </pack:vlaycell>
+
+    <pack:vlaycell height="34px">
+      <base:label
+          halign="center"
+          valign="middle"
+          class="info"
+          caption="Double-click to edit a todo"/>
+    </pack:vlaycell>
+
+    <pack:vlaycell height="34px">
+      <base:label
+          halign="center"
+          valign="middle"
+          class="info"
+          caption="Created by 
+            &lt;a href='http://gabriele.soundcafe.it'&gt;Gabriele Rossetti&lt;/a&gt;"/>
+    </pack:vlaycell>
+
+    <pack:vlaycell height="34px">
+      <base:label
+          halign="center"
+          valign="middle"
+          class="info"
+          caption="Part of 
+            &lt;a href='http://todomvc.com'&gt;TodoMVC&lt;/a&gt;"/>
+    </pack:vlaycell>
+  </pack:vlayout>
+
+</base:htmlview>
